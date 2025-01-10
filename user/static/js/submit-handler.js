@@ -73,7 +73,7 @@ function submitTest(postUrl) {
     document.getElementById("submit-loader").style.display = "block";
     axios({
       method: "post",
-      url: "/user/" + postUrl,
+      url: "/user" + postUrl,
       data: formData,
       headers: {
         Accept: "application/json",
@@ -188,7 +188,7 @@ function submitImageTest() {
 
           axios({
             method: "post",
-            url: "/user/" + postUrl,
+            url: "/user" + postUrl,
             data: formData,
             headers: {
               Accept: "application/json",
